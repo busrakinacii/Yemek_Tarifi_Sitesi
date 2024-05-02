@@ -5,23 +5,36 @@
 <html>
 <head runat="server">
     <title></title>
+    <link href="StyleSheet.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <style type="text/css">
         .auto-style1 {
             width: 100%;
+            height: 36px;
         }
 
         .auto-style2 {
             text-align: center;
             font-weight: bold;
-            background-color: #FFFFFF;
+            background-color: #f8b0b0;
+            height: 24px;
         }
         .auto-style3 {
             text-align: center;
         }
         .auto-style4 {
             font-size: x-large;
+        }
+        .auto-style5 {
+            width: 700px;
+            height: 30px;
+            margin-top: 28px;
+        }
+        .auto-style6 {
+            width: 700px;
+            height: auto;
+            margin-top: 33px;
         }
     </style>
 </head>
@@ -30,7 +43,7 @@
         <div style="width: 700px; height: 150px; margin-left: 200px; background-color: #ce7171;">
         </div>
 
-        <div style="margin-left: 200px; width: 700px; margin-top: 15px; height: 30px; background-color: #ce7171;">
+        <div style="margin-left: 200px; background-color: #fff;" class="auto-style5">
             <table class="auto-style1">
                 <tr>
                     <td class="auto-style2"><a href="AnaSayfa.aspx">ANA SAYFA</a></td>
@@ -42,7 +55,7 @@
             </table>
         </div>
 
-        <div style="margin-left: 200px; margin-top: 15px; width: 700px; height:300px;">
+        <div style="margin-left: 200px; " class="auto-style6">
 
             <div style="width: 200px; float: left; height: auto; background-color: #ce7171; margin-left: 0px;">
                 <div class="auto-style3">
@@ -60,7 +73,7 @@
                 </asp:DataList>
             </div>
 
-            <div style="width: 450px; float: left; height: 300px; background-color: #ce7171; margin-left: 50px;">
+            <div style="width: 450px; float: left; height: auto; background-color: #ce7171; margin-left: 50px;">
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                 </asp:ContentPlaceHolder>
             </div>
