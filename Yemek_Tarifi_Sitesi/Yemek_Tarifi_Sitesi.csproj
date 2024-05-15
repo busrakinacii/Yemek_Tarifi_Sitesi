@@ -67,13 +67,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin_web\Admin.aspx" />
+    <Content Include="Admin_web\Kategoriler.aspx" />
     <Content Include="AnaSayfa.aspx" />
+    <Content Include="Banner Head\admin_head.jpg" />
     <Content Include="Banner Head\head1.jpeg" />
     <Content Include="Banner Head\head2.jpeg" />
     <Content Include="Banner Head\head3.jpeg" />
     <Content Include="Banner Head\head4.jpg" />
     <Content Include="GununYemegi.aspx" />
     <Content Include="Hakkimizda.aspx" />
+    <Content Include="icons\Delete.png" />
+    <Content Include="icons\Update.png" />
     <Content Include="iletisim.aspx" />
     <Content Include="KategoriDetay.aspx" />
     <Content Include="Kullanici.css" />
@@ -85,6 +90,27 @@
     <Content Include="YemekDetay.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin_web\Admin.aspx.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_web\Admin.aspx.designer.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_web\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_web\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_web\Kategoriler.aspx.cs">
+      <DependentUpon>Kategoriler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_web\Kategoriler.aspx.designer.cs">
+      <DependentUpon>Kategoriler.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AnaSayfa.aspx.cs">
       <DependentUpon>AnaSayfa.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -146,6 +172,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Kullanici.Master" />
+    <Content Include="Admin_web\Admin.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
