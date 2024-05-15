@@ -20,10 +20,7 @@
             height: 21px;
             text-align: right;
         }
-        .auto-style13 {
-            font-weight: bold;
-            font-size: medium;
-        }
+        
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -59,25 +56,25 @@
                   <tr>
                       <td class="auto-style12">Ad Soyad:</td>
                       <td class="auto-style11">
-                          <asp:TextBox ID="TxtYorumAdSoyad" runat="server" Width="204px"></asp:TextBox>
+                          <asp:TextBox ID="TxtYorumAdSoyad" runat="server" Width="300px" CssClass="tb5"></asp:TextBox>
                       </td>
                   </tr>
                   <tr>
                       <td class="auto-style12">Mail:</td>
                       <td class="auto-style11"><strong>
-                          <asp:TextBox ID="TxtMail" runat="server" TextMode="Email" Width="205px"></asp:TextBox>
+                          <asp:TextBox ID="TxtMail" runat="server" TextMode="Email" Width="300px" CssClass="tb5"></asp:TextBox>
                           </strong></td>
                   </tr>
                   <tr>
                       <td class="auto-style12">Yorumunuz:</td>
                       <td class="auto-style11"><strong>
-                          <asp:TextBox ID="TxtYorum" runat="server" Height="97px" TextMode="MultiLine" Width="206px"></asp:TextBox>
+                          <asp:TextBox ID="TxtYorum" runat="server" Height="97px" TextMode="MultiLine" Width="300px" CssClass="tb5"></asp:TextBox>
                           </strong></td>
                   </tr>
                   <tr>
                       <td class="auto-style12">&nbsp;</td>
                       <td class="auto-style11">
-                          <asp:Button ID="BtnGonder" runat="server" CssClass="auto-style13" OnClick="BtnGonder_Click" Text="Yorum Yap" Width="215px" />
+                          <asp:Button ID="BtnGonder" runat="server" CssClass="silver-flat-button" OnClick="BtnGonder_Click" Text="Yorum Yap" Width="300px" />
                       </td>
                   </tr>
                   <tr>
