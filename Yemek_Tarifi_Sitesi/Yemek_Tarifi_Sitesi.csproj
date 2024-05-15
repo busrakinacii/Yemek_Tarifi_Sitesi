@@ -68,9 +68,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AnaSayfa.aspx" />
+    <Content Include="Banner Head\head1.jpeg" />
+    <Content Include="Banner Head\head2.jpeg" />
+    <Content Include="Banner Head\head3.jpeg" />
+    <Content Include="Banner Head\head4.jpg" />
     <Content Include="GununYemegi.aspx" />
     <Content Include="Hakkimizda.aspx" />
     <Content Include="iletisim.aspx" />
+    <Content Include="KategoriDetay.aspx" />
     <Content Include="Kullanici.css" />
     <Content Include="Resimler\2.jpg" />
     <Content Include="Resimler\blog.jpg" />
@@ -107,6 +112,13 @@
     </Compile>
     <Compile Include="iletisim.aspx.designer.cs">
       <DependentUpon>iletisim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KategoriDetay.aspx.cs">
+      <DependentUpon>KategoriDetay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KategoriDetay.aspx.designer.cs">
+      <DependentUpon>KategoriDetay.aspx</DependentUpon>
     </Compile>
     <Compile Include="Kullanici.Master.cs">
       <DependentUpon>Kullanici.Master</DependentUpon>
