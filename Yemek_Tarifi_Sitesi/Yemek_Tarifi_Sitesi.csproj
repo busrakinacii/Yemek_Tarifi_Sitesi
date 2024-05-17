@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin_web\Admin.aspx" />
+    <Content Include="Admin_web\KategoriDuzenle.aspx" />
     <Content Include="Admin_web\Kategoriler.aspx" />
     <Content Include="AnaSayfa.aspx" />
     <Content Include="Banner Head\admin_head.jpg" />
@@ -103,6 +104,13 @@
     </Compile>
     <Compile Include="Admin_web\Admin.Master.designer.cs">
       <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_web\KategoriDuzenle.aspx.cs">
+      <DependentUpon>KategoriDuzenle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_web\KategoriDuzenle.aspx.designer.cs">
+      <DependentUpon>KategoriDuzenle.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin_web\Kategoriler.aspx.cs">
       <DependentUpon>Kategoriler.aspx</DependentUpon>
