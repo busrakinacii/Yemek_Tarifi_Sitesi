@@ -60,7 +60,7 @@
                             <td class="tb5" style="padding: inherit; border: thin inset #FFFFFF;"><strong><a href="Kategoriler.aspx">KATEGORİLER</a> </strong></td>
                         </tr>
                         <tr>
-                            <td class="tb5" style="border: thin inset #FFFFFF"><strong>YEMEKLER</strong></td>
+                            <td class="tb5" style="border: thin inset #FFFFFF"><strong><a href="Yemekler.aspx">YEMEKLER</a></strong></td>
                         </tr>
                         <tr>
                             <td class="tb5" style="border: thin inset #FFFFFF"><strong>YORUMLAR</strong></td>
