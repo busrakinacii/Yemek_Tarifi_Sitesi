@@ -92,7 +92,7 @@
             </table>
         </div>
     </asp:Panel>
-        <asp:DataList ID="DataList1" runat="server" Width="447px" >
+        <asp:DataList ID="DataList1" runat="server" Width="447px" OnSelectedIndexChanged="DataList1_SelectedIndexChanged" >
             <ItemTemplate>
                 <table class="auto-style7">
                     <tr>
@@ -100,10 +100,10 @@
                             <asp:Label ID="Label1" runat="server" Text='<%# Eval("YemekAd") %>'></asp:Label>
                         </td>
                         <td class="auto-style11">
-                           <a href="Kategoriler.aspx?Kategoriid=<%# Eval("Yemekid") %>&islem=sil" ><asp:Image ID="Image2" runat="server" Height="30px" ImageUrl="~/icons/Delete.png" Width="30px" /></a>
+                           <a href="Yemekler.aspx?Yemekid=<%# Eval("Yemekid") %>&Yemeksil=sil" ><asp:Image ID="Image2" runat="server" Height="30px" ImageUrl="~/icons/Delete.png" Width="30px" /></a>
                         </td>
                         <td class="auto-style11">
-                           <a href="KategoriDuzenle.aspx?Kategoriid=<%#Eval("Yemekid") %>" ><asp:Image ID="Image3" runat="server" Height="30px" ImageUrl="~/icons/Update.png" Width="30px" /></a>
+                           <a href="YemekDuzenle.aspx?Yemekid=<%#Eval("Yemekid") %>" ><asp:Image ID="Image3" runat="server" Height="30px" ImageUrl="~/icons/Update.png" Width="30px" /></a>
                         </td>
                     </tr>
                 </table>

@@ -70,6 +70,7 @@
     <Content Include="Admin_web\Admin.aspx" />
     <Content Include="Admin_web\KategoriDuzenle.aspx" />
     <Content Include="Admin_web\Kategoriler.aspx" />
+    <Content Include="Admin_web\YemekDuzenle.aspx" />
     <Content Include="Admin_web\Yemekler.aspx" />
     <Content Include="AnaSayfa.aspx" />
     <Content Include="Banner Head\admin_head.jpg" />
@@ -119,6 +120,13 @@
     </Compile>
     <Compile Include="Admin_web\Kategoriler.aspx.designer.cs">
       <DependentUpon>Kategoriler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_web\YemekDuzenle.aspx.cs">
+      <DependentUpon>YemekDuzenle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_web\YemekDuzenle.aspx.designer.cs">
+      <DependentUpon>YemekDuzenle.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin_web\Yemekler.aspx.cs">
       <DependentUpon>Yemekler.aspx</DependentUpon>
