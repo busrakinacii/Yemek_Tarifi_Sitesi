@@ -70,6 +70,8 @@
     <Content Include="Admin_web\Admin.aspx" />
     <Content Include="Admin_web\KategoriDuzenle.aspx" />
     <Content Include="Admin_web\Kategoriler.aspx" />
+    <Content Include="Admin_web\MesajDetay.aspx" />
+    <Content Include="Admin_web\Mesajlar.aspx" />
     <Content Include="Admin_web\YemekDuzenle.aspx" />
     <Content Include="Admin_web\Yemekler.aspx" />
     <Content Include="Admin_web\YorumDetay.aspx" />
@@ -81,8 +83,11 @@
     <Content Include="Banner Head\head3.jpeg" />
     <Content Include="Banner Head\head4.jpg" />
     <Content Include="GununYemegi.aspx" />
+    <Content Include="Admin_web\GununYemegiAdmin.aspx" />
     <Content Include="Hakkimizda.aspx" />
+    <Content Include="icons\choose.png" />
     <Content Include="icons\Delete.png" />
+    <Content Include="icons\Received.png" />
     <Content Include="icons\Update.png" />
     <Content Include="iletisim.aspx" />
     <Content Include="KategoriDetay.aspx" />
@@ -122,6 +127,20 @@
     </Compile>
     <Compile Include="Admin_web\Kategoriler.aspx.designer.cs">
       <DependentUpon>Kategoriler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_web\MesajDetay.aspx.cs">
+      <DependentUpon>MesajDetay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_web\MesajDetay.aspx.designer.cs">
+      <DependentUpon>MesajDetay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_web\Mesajlar.aspx.cs">
+      <DependentUpon>Mesajlar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_web\Mesajlar.aspx.designer.cs">
+      <DependentUpon>Mesajlar.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin_web\YemekDuzenle.aspx.cs">
       <DependentUpon>YemekDuzenle.aspx</DependentUpon>
@@ -164,6 +183,13 @@
     </Compile>
     <Compile Include="GununYemegi.aspx.designer.cs">
       <DependentUpon>GununYemegi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_web\GununYemegiAdmin.aspx.cs">
+      <DependentUpon>GununYemegiAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_web\GununYemegiAdmin.aspx.designer.cs">
+      <DependentUpon>GununYemegiAdmin.aspx</DependentUpon>
     </Compile>
     <Compile Include="Hakkimizda.aspx.cs">
       <DependentUpon>Hakkimizda.aspx</DependentUpon>

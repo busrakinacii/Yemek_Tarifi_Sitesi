@@ -67,10 +67,10 @@
                                <a href="Yorumlar.aspx">YORUMLAR</a></strong></td>
                         </tr>
                         <tr>
-                            <td class="tb5" style="border: thin inset #FFFFFF"><strong>MESAJLAR</strong></td>
+                            <td class="tb5" style="border: thin inset #FFFFFF"><strong><a href="Mesajlar.aspx">MESAJLAR</a> </strong></td>
                         </tr>
                         <tr>
-                            <td class="tb5" style="border: thin inset #FFFFFF"><strong>GÜNÜN YEMEĞİ</strong></td>
+                            <td class="tb5" style="border: thin inset #FFFFFF"><strong><a href="GununYemegiAdmin.aspx">GÜNÜN YEMEĞİ</a> </strong></td>
                         </tr>
                         <tr>
                             <td class="tb5" style="border: thin inset #FFFFFF"><strong>ÖNERİLER</strong></td>
