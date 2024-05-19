@@ -72,6 +72,8 @@
     <Content Include="Admin_web\Kategoriler.aspx" />
     <Content Include="Admin_web\YemekDuzenle.aspx" />
     <Content Include="Admin_web\Yemekler.aspx" />
+    <Content Include="Admin_web\YorumDetay.aspx" />
+    <Content Include="Admin_web\Yorumlar.aspx" />
     <Content Include="AnaSayfa.aspx" />
     <Content Include="Banner Head\admin_head.jpg" />
     <Content Include="Banner Head\head1.jpeg" />
@@ -134,6 +136,20 @@
     </Compile>
     <Compile Include="Admin_web\Yemekler.aspx.designer.cs">
       <DependentUpon>Yemekler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_web\YorumDetay.aspx.cs">
+      <DependentUpon>YorumDetay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_web\YorumDetay.aspx.designer.cs">
+      <DependentUpon>YorumDetay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_web\Yorumlar.aspx.cs">
+      <DependentUpon>Yorumlar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_web\Yorumlar.aspx.designer.cs">
+      <DependentUpon>Yorumlar.aspx</DependentUpon>
     </Compile>
     <Compile Include="AnaSayfa.aspx.cs">
       <DependentUpon>AnaSayfa.aspx</DependentUpon>
