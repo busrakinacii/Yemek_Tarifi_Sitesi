@@ -66,5 +66,22 @@ namespace Yemek_Tarifi_Sitesi.Admin_web
             Response.Write("<script>alert('Güncellenme İşlemi Başarılı Bir Şekilde Gerçekleşmiştir.')</script>");
             temizle();
         }
+
+        protected void BtnSec_Click(object sender, EventArgs e)
+        {
+            //Yemek Durumlarının Hepsini False Yaptık
+            SqlCommand komut = new SqlCommand("Update Tbl_Yemekler set Durum=0", conn.baglanti());
+            komut.ExecuteNonQuery();
+            conn.baglanti().Close();
+
+            //İstediğimiz yemeği True olarak Değiştirelim
+
+            SqlCommand komut2 = new SqlCommand("Update Tbl_Yemekler set Durum=1 where Yemekid=@p1", conn.baglanti());
+            komut2.Parameters.AddWithValue("@p1", ymkid);
+            komut2.ExecuteNonQuery();
+            conn.baglanti().Close();
+            Response.Write("<script>alert('Günün Yemeği Ayarlandı :)')</script>");
+
+        }
     }
 }

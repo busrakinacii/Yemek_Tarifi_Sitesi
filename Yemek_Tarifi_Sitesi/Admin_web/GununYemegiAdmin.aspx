@@ -55,7 +55,7 @@
                         <asp:Label ID="Label1" runat="server" Text='<%# Eval("YemekAd") %>'></asp:Label>
                     </td>
                     <td class="auto-style11">
-                        <a href="Yemekler.aspx?Yemekid=<%#Eval("Yemekid") %>">
+                        <a href="YemekDuzenle.aspx?Yemekid=<%#Eval("Yemekid") %>">
                             <asp:Image ID="Image3" runat="server" Height="30px" ImageUrl="~/icons/choose.png" Width="30px" /></a>
                         &nbsp;</td>
                 </tr>
