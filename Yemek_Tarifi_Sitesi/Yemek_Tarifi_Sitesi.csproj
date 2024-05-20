@@ -68,10 +68,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin_web\Admin.aspx" />
+    <Content Include="Admin_web\HakkimizdaAdmin.aspx" />
     <Content Include="Admin_web\KategoriDuzenle.aspx" />
     <Content Include="Admin_web\Kategoriler.aspx" />
     <Content Include="Admin_web\MesajDetay.aspx" />
     <Content Include="Admin_web\Mesajlar.aspx" />
+    <Content Include="Admin_web\Tarifler.aspx" />
+    <Content Include="Admin_web\TarifOnerDetay.aspx" />
     <Content Include="Admin_web\YemekDuzenle.aspx" />
     <Content Include="Admin_web\Yemekler.aspx" />
     <Content Include="Admin_web\YorumDetay.aspx" />
@@ -85,6 +88,7 @@
     <Content Include="GununYemegi.aspx" />
     <Content Include="Admin_web\GununYemegiAdmin.aspx" />
     <Content Include="Hakkimizda.aspx" />
+    <Content Include="icons\Add_properties.png" />
     <Content Include="icons\choose.png" />
     <Content Include="icons\Delete.png" />
     <Content Include="icons\Received.png" />
@@ -114,6 +118,13 @@
     <Compile Include="Admin_web\Admin.Master.designer.cs">
       <DependentUpon>Admin.Master</DependentUpon>
     </Compile>
+    <Compile Include="Admin_web\HakkimizdaAdmin.aspx.cs">
+      <DependentUpon>HakkimizdaAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_web\HakkimizdaAdmin.aspx.designer.cs">
+      <DependentUpon>HakkimizdaAdmin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin_web\KategoriDuzenle.aspx.cs">
       <DependentUpon>KategoriDuzenle.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -141,6 +152,20 @@
     </Compile>
     <Compile Include="Admin_web\Mesajlar.aspx.designer.cs">
       <DependentUpon>Mesajlar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_web\Tarifler.aspx.cs">
+      <DependentUpon>Tarifler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_web\Tarifler.aspx.designer.cs">
+      <DependentUpon>Tarifler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_web\TarifOnerDetay.aspx.cs">
+      <DependentUpon>TarifOnerDetay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_web\TarifOnerDetay.aspx.designer.cs">
+      <DependentUpon>TarifOnerDetay.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin_web\YemekDuzenle.aspx.cs">
       <DependentUpon>YemekDuzenle.aspx</DependentUpon>

@@ -73,7 +73,7 @@
                             <td class="tb5" style="border: thin inset #FFFFFF"><strong><a href="GununYemegiAdmin.aspx">GÜNÜN YEMEĞİ</a> </strong></td>
                         </tr>
                         <tr>
-                            <td class="tb5" style="border: thin inset #FFFFFF"><strong>ÖNERİLER</strong></td>
+                            <td class="tb5" style="border: thin inset #FFFFFF"><strong><a href="Tarifler.aspx">TARİFLER</a></strong></td>
                         </tr>
                         <tr>
                             <td class="tb5" style="border: thin inset #FFFFFF"><strong>HAKKIMIZDA</strong></td>
