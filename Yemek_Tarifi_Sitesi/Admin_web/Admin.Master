@@ -76,7 +76,7 @@
                             <td class="tb5" style="border: thin inset #FFFFFF"><strong><a href="Tarifler.aspx">TARİFLER</a></strong></td>
                         </tr>
                         <tr>
-                            <td class="tb5" style="border: thin inset #FFFFFF"><strong>HAKKIMIZDA</strong></td>
+                            <td class="tb5" style="border: thin inset #FFFFFF"><strong><a href="HakkimizdaAdmin.aspx">HAKKIMIZDA</a></strong></td>
                         </tr>
                         <tr>
                             <td>&nbsp;</td>
