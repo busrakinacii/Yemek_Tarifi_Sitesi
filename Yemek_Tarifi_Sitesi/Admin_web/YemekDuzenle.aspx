@@ -29,24 +29,24 @@
         }
         .auto-style14 {
             height: 35px;
-            text-align: right;
-        }
+        text-align: right;
+    }
         .auto-style15 {
             text-align: left;
             height: 35px;
         }
-        .auto-style16 {
-            text-align: center;
-            height: 41px;
-            margin-left: 80px;
-        }
-        .auto-style17 {
-            height: 41px;
-        }
-        .auto-style18 {
-            text-align: center;
-            height: 41px;
-        }
+    .auto-style16 {
+        text-align: center;
+        height: 41px;
+        margin-left: 80px;
+    }
+    .auto-style17 {
+        height: 41px;
+    }
+    .auto-style18 {
+        text-align: center;
+        height: 41px;
+    }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">

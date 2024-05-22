@@ -53,9 +53,9 @@
             border: 2px solid #456879;
             border-radius: 10px;
         }
-        .auto-style21 {
-            width: 33px;
-        }
+    .auto-style21 {
+        width: 33px;
+    }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">

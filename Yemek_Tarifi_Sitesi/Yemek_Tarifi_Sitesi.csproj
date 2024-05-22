@@ -265,6 +265,7 @@
     <Content Include="Kullanici.Master" />
     <Content Include="Admin_web\Admin.Master" />
     <None Include="packages.config" />
+    <Content Include="VeriTabanı\Dbo_YemekTarifi.bak" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
