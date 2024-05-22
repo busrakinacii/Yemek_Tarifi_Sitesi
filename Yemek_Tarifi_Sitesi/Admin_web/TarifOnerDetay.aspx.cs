@@ -59,11 +59,14 @@ namespace Yemek_Tarifi_Sitesi.Admin_web
 
             //Yemeği Yemekler Kısmına Ekleme
 
-            SqlCommand komut2 = new SqlCommand("Insert into Tbl_Yemekler (YemekAd,YemekMalzeme,YemekTarif,Kategoriid) values (@p1,@p2,@p3,@p4)", conn.baglanti());
+            FileUpload1.SaveAs(Server.MapPath("/Resimler/" + FileUpload1.FileName));
+
+            SqlCommand komut2 = new SqlCommand("Insert into Tbl_Yemekler (YemekAd,YemekMalzeme,YemekTarif,YemekResim,Kategoriid) values (@p1,@p2,@p3,@p4,p5)", conn.baglanti());
             komut2.Parameters.AddWithValue("@p1", TxtTarifAd.Text);
             komut2.Parameters.AddWithValue("@p2",TxtTarifMalzeme.Text);
             komut2.Parameters.AddWithValue("@p3",TxtYapilis.Text);
-            komut2.Parameters.AddWithValue("@p4", DropDownList1.SelectedValue);
+            komut2.Parameters.AddWithValue("@p4", "~/Resimler/"+ FileUpload1.FileName);
+            komut2.Parameters.AddWithValue("@p5", DropDownList1.SelectedValue);
             komut2.ExecuteNonQuery();
             conn.baglanti().Close();
 

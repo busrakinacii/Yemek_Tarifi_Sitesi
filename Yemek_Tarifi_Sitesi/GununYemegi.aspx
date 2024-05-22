@@ -41,7 +41,7 @@
                 </tr>
                 <tr>
                     <td style="text-align: center; margin-left: 120px">
-                        <asp:Image ID="Image2" runat="server" Height="150px" Width="418px" ImageUrl="~/Resimler/Kiymali_Patlican.jpg" />
+                        <asp:Image ID="Image2" runat="server" Height="200px" Width="418px" ImageUrl='<%# Eval("YemekResim") %>' />
                     </td>
                 </tr>
                     <tr>

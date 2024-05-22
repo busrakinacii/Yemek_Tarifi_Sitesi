@@ -28,12 +28,14 @@ namespace Yemek_Tarifi_Sitesi
         }
         protected void BtnTarifOner_Click(object sender, EventArgs e)
         {
+            FileUpload1.SaveAs(Server.MapPath("/Resimler/" + FileUpload1.FileName));
+
             SqlCommand komut = new SqlCommand("insert into Tbl_Tarifler (TarifAd,TarifMalzeme,TarifYapilis,TarifResim,TarifSahip,TarifSahipMail) values (@t1,@t2,@t3,@t4,@t5,@t6)", conn.baglanti());
             komut.Parameters.AddWithValue("@t1", TxtTarifAd.Text);
             komut.Parameters.AddWithValue("@t2", TxtMalzemeler.Text);
             komut.Parameters.AddWithValue("@t3", TxtYapilis.Text);
-            komut.Parameters.AddWithValue("@t4", FileUpload1.FileName);
-            komut.Parameters.AddWithValue("@t5", TxtTarifOner.Text);
+            komut.Parameters.AddWithValue("@t4", "~/Resimler/"+FileUpload1.FileName);
+            komut.Parameters.AddWithValue("@t5",TxtTarifOner.Text);
             komut.Parameters.AddWithValue("@t6", TxtMailAdres.Text);
             komut.ExecuteNonQuery();
             conn.baglanti().Close();

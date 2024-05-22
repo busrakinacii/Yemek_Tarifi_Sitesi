@@ -55,11 +55,14 @@ namespace Yemek_Tarifi_Sitesi.Admin_web
 
         protected void BtnGuncelle_Click(object sender, EventArgs e)
         {
-            SqlCommand komut = new SqlCommand("Update Tbl_Yemekler set YemekAd=@p1,YemekMalzeme=@p2,YemekTarif=@p3,Kategoriid=@p4 where Yemekid=@p5", conn.baglanti());
+            FileUpload1.SaveAs(Server.MapPath("/Resimler/" + FileUpload1.FileName));
+
+            SqlCommand komut = new SqlCommand("Update Tbl_Yemekler set YemekAd=@p1,YemekMalzeme=@p2,YemekTarif=@p3,Kategoriid=@p4,YemekResim=@p6 where Yemekid=@p5", conn.baglanti());
             komut.Parameters.AddWithValue("@p1", TxtYemekAd.Text);
             komut.Parameters.AddWithValue("@p2", TxtMalzemeler.Text);
             komut.Parameters.AddWithValue("@p3", TxtYemekTarif.Text);
             komut.Parameters.AddWithValue("@p4", DropDownList1.SelectedValue);
+            komut.Parameters.AddWithValue("@p6", "~/Resimler/"+FileUpload1.FileName);
             komut.Parameters.AddWithValue("@p5", ymkid);
             komut.ExecuteNonQuery();
             conn.baglanti().Close();

@@ -132,37 +132,39 @@
             <tr>
                 <td class="auto-style19"><strong>YEMEK AD:</strong></td>
                 <td class="auto-style24">
-                    <asp:TextBox ID="TxtYemekAd" runat="server" Width="300px" CssClass="tb5"></asp:TextBox>
+                    <asp:TextBox ID="TxtYemekAd" runat="server" Width="275px" CssClass="tb5"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style19"><strong>MALZEMELER:</strong></td>
                 <td class="auto-style25">
-                    <asp:TextBox ID="TxtMalzemeler" runat="server" CssClass="tb5" Height="150px" TextMode="MultiLine" Width="300px"></asp:TextBox>
+                    <asp:TextBox ID="TxtMalzemeler" runat="server" CssClass="tb5" Height="150px" TextMode="MultiLine" Width="275px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style18"><strong>YEMEK TARİFİ:</strong></td>
                 <td class="auto-style17">
-                    <asp:TextBox ID="TxtYemekTarifi" runat="server" CssClass="tb5" Height="200px" TextMode="MultiLine" Width="300px"></asp:TextBox>
+                    <asp:TextBox ID="TxtYemekTarifi" runat="server" CssClass="tb5" Height="200px" TextMode="MultiLine" Width="275px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style20"><strong>KATEGORİ:</strong></td>
                 <td class="auto-style21">
-                    <asp:DropDownList ID="DropDownList1" runat="server" CssClass="tb5" Width="300px">
+                    <asp:DropDownList ID="DropDownList1" runat="server" CssClass="tb5" Width="275px">
                     </asp:DropDownList>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style22"></td>
-                <td class="auto-style23"><strong>
-                    <asp:Button ID="BtnEkle" runat="server" CssClass="auto-style16" Height="40px" OnClick="BtnEkle_Click" Text="Ekle" />
-                    </strong></td>
+                <td class="auto-style22">Y<strong>EMEK GÖRÜNTÜ:</strong></td>
+                <td class="auto-style23">
+                    <asp:FileUpload ID="FileUpload1" runat="server" CssClass="tb5" Height="30px" Width="275px" />
+                </td>
             </tr>
             <tr>
                 <td class="auto-style22">&nbsp;</td>
-                <td class="auto-style23">&nbsp;</td>
+                <td class="auto-style23"><strong>
+                    <asp:Button ID="BtnEkle0" runat="server" CssClass="auto-style16" Height="40px" OnClick="BtnEkle_Click" Text="Ekle" />
+                    </strong></td>
             </tr>
         </table>
     </asp:Panel>

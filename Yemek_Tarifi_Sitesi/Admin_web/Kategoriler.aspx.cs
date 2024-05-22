@@ -71,8 +71,11 @@ namespace Yemek_Tarifi_Sitesi.Admin_web
 
         protected void BtnEkle_Click(object sender, EventArgs e)
         {
-            SqlCommand komut = new SqlCommand("insert into Tbl_Kategoriler (KategoriAd) values (@p1)", conn.baglanti());
+            FileUpload1.SaveAs(Server.MapPath("/Resimler/" + FileUpload1.FileName));
+
+            SqlCommand komut = new SqlCommand("insert into Tbl_Kategoriler (KategoriAd,KategoriResim) values (@p1,@p2)", conn.baglanti());
             komut.Parameters.AddWithValue("@p1", TxtKategoriAd.Text);
+            komut.Parameters.AddWithValue("@p2", "~/Resimler/" + FileUpload1.FileName);
             komut.ExecuteNonQuery();
             conn.baglanti().Close();
             Response.Write("<script>alert('Kategori Başarılı Bir Şekilde Eklenmiştir.')</script>");

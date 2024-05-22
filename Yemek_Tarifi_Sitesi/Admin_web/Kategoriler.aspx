@@ -24,7 +24,6 @@
             position: relative;
             vertical-align: top;
             width: 183px;
-            height: 50px;
             padding: 0;
             font-size: 22px;
             color: white;
@@ -54,6 +53,9 @@
             border: 2px solid #456879;
             border-radius: 10px;
         }
+        .auto-style21 {
+            width: 33px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -76,6 +78,9 @@
             <ItemTemplate>
                 <table class="auto-style7">
                     <tr>
+                        <td class="auto-style21">
+                            <asp:Image ID="Image4" runat="server" Height="30px" ImageUrl='<%# Eval("KategoriResim") %>' Width="30px" />
+                        </td>
                         <td class="auto-style12">
                             <asp:Label ID="Label1" runat="server" Text='<%# Eval("KategoriAd") %>'></asp:Label>
                         </td>

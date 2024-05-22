@@ -24,15 +24,28 @@
             box-shadow: inset 0 -2px #acb2b7;
             border-radius: 10px;
             font-weight: bold;
-            left: 0px;
+            left: 2px;
             top: 0px;
         }
         .auto-style14 {
             height: 35px;
+            text-align: right;
         }
         .auto-style15 {
-            text-align: center;
+            text-align: left;
             height: 35px;
+        }
+        .auto-style16 {
+            text-align: center;
+            height: 41px;
+            margin-left: 80px;
+        }
+        .auto-style17 {
+            height: 41px;
+        }
+        .auto-style18 {
+            text-align: center;
+            height: 41px;
         }
     </style>
 </asp:Content>
@@ -45,34 +58,40 @@
         <tr>
             <td class="auto-style11"><strong>YEMEK AD:</strong></td>
             <td colspan="2">
-                <asp:TextBox ID="TxtYemekAd" runat="server" CssClass="tb5" Width="300px"></asp:TextBox>
+                <asp:TextBox ID="TxtYemekAd" runat="server" CssClass="tb5" Width="280px"></asp:TextBox>
             </td>
         </tr>
         <tr>
             <td class="auto-style11"><strong>MALZEMELER:</strong></td>
             <td colspan="2">
-                <asp:TextBox ID="TxtMalzemeler" runat="server" CssClass="tb5" Height="150px" TextMode="MultiLine" Width="300px"></asp:TextBox>
+                <asp:TextBox ID="TxtMalzemeler" runat="server" CssClass="tb5" Height="150px" TextMode="MultiLine" Width="280px"></asp:TextBox>
             </td>
         </tr>
         <tr>
             <td class="auto-style11"><strong>TARİF:</strong></td>
             <td colspan="2">
-                <asp:TextBox ID="TxtYemekTarif" runat="server" CssClass="tb5" Height="200px" TextMode="MultiLine" Width="300px"></asp:TextBox>
+                <asp:TextBox ID="TxtYemekTarif" runat="server" CssClass="tb5" Height="200px" TextMode="MultiLine" Width="280px"></asp:TextBox>
             </td>
         </tr>
         <tr>
             <td class="auto-style11"><strong>KATEGORİ:</strong></td>
             <td colspan="2">
-                <asp:DropDownList ID="DropDownList1" runat="server" CssClass="tb5" Width="300px">
+                <asp:DropDownList ID="DropDownList1" runat="server" CssClass="tb5" Width="280px">
                 </asp:DropDownList>
             </td>
         </tr>
         <tr>
-            <td class="auto-style14"></td>
-            <td class="auto-style15"><strong>
-                <asp:Button ID="BtnGuncelle" runat="server" CssClass="auto-style10" OnClick="BtnGuncelle_Click" Text="GÜNCELLE" Width="138px" />
+            <td class="auto-style14"><strong>YEMEK GÖRÜNTÜ:</strong></td>
+            <td class="auto-style15" colspan="2">
+                <asp:FileUpload ID="FileUpload1" runat="server" CssClass="tb5" Height="30px" Width="280px" />
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style17"></td>
+            <td class="auto-style18"><strong>
+                <asp:Button ID="BtnGuncelle" runat="server" CssClass="auto-style10" OnClick="BtnGuncelle_Click" Text="GÜNCELLE" Width="138px" Height="29px" />
                 </strong></td>
-            <td class="auto-style15"><strong>
+            <td class="auto-style16"><strong>
                 <asp:Button ID="BtnSec" runat="server" CssClass="auto-style13" OnClick="BtnSec_Click" Text="Günün Yemeği Seç" />
                 </strong></td>
         </tr>

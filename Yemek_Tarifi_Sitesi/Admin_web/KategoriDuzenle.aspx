@@ -27,7 +27,7 @@
         <tr>
             <td class="auto-style10"><strong>RESİM:</strong></td>
             <td>
-                <asp:FileUpload ID="FileUpload1" runat="server" CssClass="tb5" Width="215px" />
+                <asp:FileUpload ID="FileUpload1" runat="server" CssClass="tb5" Width="215px" Height="30px" />
             </td>
         </tr>
         <tr>

@@ -40,10 +40,13 @@ namespace Yemek_Tarifi_Sitesi.Admin_web
 
         protected void BtnGuncelle_Click(object sender, EventArgs e)
         {
-            SqlCommand komut = new SqlCommand("Update Tbl_Kategoriler set KategoriAd=@p1,KategoriAdet=@p2 where Kategoriid=@p3", conn.baglanti());
+            FileUpload1.SaveAs(Server.MapPath("/Resimler/" + FileUpload1.FileName));
+
+            SqlCommand komut = new SqlCommand("Update Tbl_Kategoriler set KategoriAd=@p1,KategoriAdet=@p2,KategoriResim=@p3 where Kategoriid=@p4", conn.baglanti());
             komut.Parameters.AddWithValue("@p1", TxtKategoriAd.Text);
             komut.Parameters.AddWithValue("@p2", TxtAdet.Text);
-            komut.Parameters.AddWithValue("@p3", kategoriid);
+            komut.Parameters.AddWithValue("@p3", "~/Resimler/" + FileUpload1.FileName);
+            komut.Parameters.AddWithValue("@p4", kategoriid);
             komut.ExecuteNonQuery();
             conn.baglanti().Close();
             Response.Write("<script>alert('Kategori Başarılı Bir Şekilde Güncellenmiştir.')</script>");

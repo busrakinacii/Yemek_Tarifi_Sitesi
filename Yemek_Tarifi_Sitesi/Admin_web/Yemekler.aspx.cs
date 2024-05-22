@@ -92,12 +92,17 @@ namespace Yemek_Tarifi_Sitesi.Admin_web
 
         protected void BtnEkle_Click(object sender, EventArgs e)
         {
+            //Resim Dosya yolunu Kayıt etme kodu
+            FileUpload1.SaveAs(Server.MapPath("/Resimler/" + FileUpload1.FileName));
+
             //Yemek Ekleme
-            SqlCommand komut = new SqlCommand("insert into Tbl_Yemekler (YemekAd,YemekMalzeme,YemekTarif,Kategoriid) values (@p1,@p2,@p3,@p4)", conn.baglanti());
+            SqlCommand komut = new SqlCommand("insert into Tbl_Yemekler (YemekAd,YemekMalzeme,YemekTarif,YemekResim,Kategoriid) values (@p1,@p2,@p3,@p4,p5)", conn.baglanti());
             komut.Parameters.AddWithValue("@p1", TxtYemekAd.Text);
             komut.Parameters.AddWithValue("@p2", TxtMalzemeler.Text);
             komut.Parameters.AddWithValue("@p3", TxtYemekTarifi.Text);
-            komut.Parameters.AddWithValue("@p4", DropDownList1.SelectedValue);
+            komut.Parameters.AddWithValue("@p4", "~/Resimler/" + FileUpload1.FileName);
+            komut.Parameters.AddWithValue("@p5", DropDownList1.SelectedValue);
+
             komut.ExecuteNonQuery();
             conn.baglanti().Close();
             Response.Write("<script>alert('Yemek Tarifiniz Başarılı Bir Şekilde Kayıt Edilmiştir.')</script>");
