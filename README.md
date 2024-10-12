@@ -1,6 +1,6 @@
 # Yemek_Tarifi_Sitesi
-#Asp.Net'de Geliştirmeye Çalıştığım Bir Yemek Tarifi Sitesidir.Site Admin Paneli Ve Web(Kullanıcı Arayüzü) Kısmı Oluşturularak Yapılmıştır.
-#Kullanıcı Arayüz Görüntüleri
+# Asp.Net'de Geliştirmeye Çalıştığım Bir Yemek Tarifi Sitesidir.Site Admin Paneli Ve Web(Kullanıcı Arayüzü) Kısmı Oluşturularak Yapılmıştır.
+# Kullanıcı Arayüz Görüntüleri
 
 ![Ekran görüntüsü 2024-10-06 205054](https://github.com/user-attachments/assets/204fd16f-f2ab-4445-b920-4fe84910ea4e)
 ![Ekran görüntüsü 2024-10-06 205109](https://github.com/user-attachments/assets/7246c1a5-1985-4cb4-b154-8142ca9c609c)
